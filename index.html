@@ -3,18 +3,61 @@
 
   <head>
     <meta charset="utf-8">
-    <title>My Awesome Website</title>
+    <meta name="viewpoint" content="width=device-width, inital-scale=1">
+    <title>CHS Honors Society</title>
     <meta name="author" content="Max Comfere">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
   </head>
 
-<body>
-  <header>
-    <h1 class="page-title">My Awesome Website</h1>
-    <p>This is some awesome text.</p>
+<body onload="getPics()" class="body">
+  <header class="main-header">
+    <h1 id="page-title">CHS Honors Society</h1>
   </header>
+  <main class="main-content">
+
+  <ul class="ul">
+    <li class="li" id="homeTrigger" data-text-role="trigger">
+      HOME
+    </li>
+    <li class="li" id="hoursTrigger" data-text-role="trigger">
+      HOURS
+    </li>
+    <li class="li" id="guideTrigger" data-text-role="trigger">
+      GUIDELINES
+    </li>
+    <li class="li" id="honorsTrigger" data-text-role="trigger">
+      HONORS CODE
+    </li>
+  </ul>
+
+  <div class="gallery">
+    <a href="#" data-image-role="trigger" data-image-title="Max" data-image-url="chs img/Screen Shot 2022-03-10 at 12.31.19 PM.png">
+      <img class="thumbnail-image" src="chs img/Screen Shot 2022-03-10 at 12.31.19 PM.png" alt="Max">
+   
+    <div class="desc">Secretary - Maximilian Comfere</div>
+  </a>
+  </div>
+  
+  <div class="gallery">
+    <a href="#" data-image-role="trigger" data-image-title="Sohum" data-image-url="chs img/Screen Shot 2022-03-13 at 9.15.06 PM.png">
+      <img class="thumbnail-image" src="chs img/Screen Shot 2022-03-13 at 9.15.06 PM.png" alt="Sohum">
+    
+    <div class="desc">Vice-President - Sohum Joshi</div>
+  </a>
+  </div>
+  
+  <div class="gallery">
+    <a href="#" data-image-role="trigger" data-image-title="Vinay" data-image-url="chs img/Screen Shot 2022-03-13 at 9.15.33 PM.png">
+      <img class="thumbnail-image" src="chs img/Screen Shot 2022-03-13 at 9.15.33 PM.png" alt="Vinay" >
+  
+    <div class="desc">President - Vinay Beeram</div>
+  </a>
+  </div>
+  <div  id="fullpage" onclick="this.style.display='none';"></div>
+
+</main>
 
   <script src="scripts/main.js"></script>
 </body>
